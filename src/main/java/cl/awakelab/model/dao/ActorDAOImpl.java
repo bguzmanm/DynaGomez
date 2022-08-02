@@ -46,7 +46,8 @@ public class ActorDAOImpl implements ActorDAO {
 			ResultSet rs = snt.executeQuery(sql);
 			
 			while (rs.next()) {
-				actors.add(new Actor(rs.getInt("actor_id"), rs.getString("first_name"), rs.getString("last_name")));
+				actors.add(new Actor(rs.getInt("actor_id"), rs.getString("first_name"), 
+						rs.getString("last_name")));
 			}
 
 		} catch (SQLException e) {

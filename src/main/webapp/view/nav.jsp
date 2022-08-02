@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a id="actor" class="nav-link" href="${pageContext.request.contextPath}/actor">Actores</a>
+          <a id="actor" class="nav-link" href="${pageContext.request.contextPath}/actor?op=list">Actores</a>
         </li>
         <li class="nav-item">
-          <a id="film" class="nav-link" href="${pageContext.request.contextPath}/film">Películas</a>
+          <a id="film" class="nav-link" href="${pageContext.request.contextPath}/film?op=list">Películas</a>
         </li>
       </ul>
     </div>
