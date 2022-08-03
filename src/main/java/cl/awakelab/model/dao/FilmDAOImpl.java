@@ -16,10 +16,10 @@ public class FilmDAOImpl implements FilmDAO{
 	public void create(Film film) {
 
 		try {			
-			String sql = "insert into film ( title, description, release_year, rating, special_features)"
+			String sql = "insert into film ( title, description, release_year, rating, special_features, language_id, original_language_id)"
 					+ " values ('" + film.getTitle() + "', '" + film.getDescription() + "', "
 					+ film.getReleaseYear() + " , '" + film.getRating() + "', '" 
-					+ film.getSpecialFeatures() + "'";
+					+ film.getSpecialFeatures() + "', 1, 1)";
 			
 			Connection cnx = Conexion.getConnection();
 			Statement stt = cnx.createStatement();

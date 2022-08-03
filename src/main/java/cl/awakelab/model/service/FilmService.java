@@ -16,6 +16,11 @@ public class FilmService {
 	public Film read(int filmId){
 		return dao.read(filmId);
 	}
+	
+	public void update(Film film) {
+		dao.update(film);
+	}
+	
 	public void create(Film film){
 		dao.create(film);
 	}
